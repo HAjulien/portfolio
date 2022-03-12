@@ -35,6 +35,16 @@ let myChart = new Chart(tableau, {
                 borderWidth: 1
             }
         },
+        scales: {
+            r: {
+              pointLabels: {
+                font: {
+                  size: 16
+                }
+              },
+              
+            }
+          }
 
     }
     
