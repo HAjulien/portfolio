@@ -51,7 +51,7 @@ body {
 
 #titre{
     margin-bottom: .5em;
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: center;
 
 }
@@ -63,6 +63,7 @@ h1 span {
 .recherche{
     position: relative;
     text-align: center;
+    font-size: 1.8rem;
 }
 
 .presentation{
