@@ -103,3 +103,21 @@ section{
     background-color: #f8f8f8;
 }
 
+h4{
+    text-align: center;
+    margin: 3vh 0;
+}
+.logos{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+.logo{
+    height: 90px;
+    width: 90px;
+    border-radius: 30%;
+    margin: 10px;
+
+}
