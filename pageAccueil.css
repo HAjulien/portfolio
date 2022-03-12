@@ -58,7 +58,7 @@ body {
 
 h1 span {
     position: relative;  
-    /* pour pouvoir faire l'animation */
+    /* pour pouvoir faire l'animation avec gsap*/
 }
 .recherche{
     position: relative;
