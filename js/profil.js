@@ -13,8 +13,8 @@ let myChart = new Chart(tableau, {
         ],
         datasets: [
             {
-                label: "Niveau",
-                data: [90, 85, 75, 75, 70,],
+                label: "Niveau /100 ",
+                data: [90, 90, 70, 85, 85,],
                 fill: true,
                 backgroundColor: 'rgba(226, 238, 246, 0.7)',
                 borderColor: 'rgb(000, 99, 132)',
@@ -26,8 +26,7 @@ let myChart = new Chart(tableau, {
         plugins: {
             title: {
                 display: true,
-                text: 'niveau de mes compétences',
-                fontSize: 42
+                text: 'niveau de mes compétences sur 100',
             },
             
         },
@@ -35,7 +34,8 @@ let myChart = new Chart(tableau, {
             line: {
                 borderWidth: 1
             }
-        }
+        },
+
     }
     
 });
