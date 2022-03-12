@@ -27,13 +27,13 @@ body {
 
 .l1 {
     width: 70vw;
-    background-color: #FFBAC3;
+    background-color: #333;
 }
 .l2 {
     position: relative;
     top: 20px;
     width: 40vw;
-    background-color: #fdfd96;
+    background-color: #FFBAC3;
 }
 
 .container-first, .presentation{
