@@ -22,7 +22,7 @@ body {
     justify-content: center;
     margin: 10vh auto;
     max-width: 65ch;
-    background-color: #f8f8f8;
+    background-color: #f8f8f8cb;
     border: 1px solid #333;
     border-radius: 10px;
 }
@@ -46,10 +46,59 @@ section{
     flex-direction: column;
 }
 
+/* 1er partie tableau */
 .info{
     display: flex;
-    align-content: center;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    height: 100vh;
     background-color: #f8f8f8cb;
+    border-radius:15px 0 0 15px;
+}
+
+.etatCivil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.champs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 96%;
+    height: 5vh;
+    margin: .5em 0;
+}
+
+.champs span, .champs p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+}
+
+.champs span{
+    width: 30%;
+}
+
+.champs p {
+    width: 70%;
+    background-color: #2cd8d566;
+    border:1px solid #333;
+    border-radius: 30px;
+}
+
+/* 2eme partie du tableau */
+
+.competences{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3vh;
+    background-color: #f8f8f8;
 }
