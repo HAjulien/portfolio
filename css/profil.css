@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto@1&display=swap');
 
 *, *::before, *::after{
     margin: 0;
@@ -20,7 +20,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 10vh auto;
+    margin: 5vh auto;
     max-width: 65ch;
     background-color: #f8f8f8cb;
     border: 1px solid #333;
@@ -94,6 +94,11 @@ h3{
     background-color: #2cd8d566;
     border:1px solid #333;
     border-radius: 30px;
+}
+
+p a{
+    color: #000;
+    text-decoration: none;
 }
 
 /* 2eme partie du tableau */
