@@ -2,6 +2,7 @@ const tableau = document.getElementById('tableau').getContext('2d');
 
 // pour effet competance
 const logo = document.querySelectorAll('.logo');
+const champs = document.querySelectorAll('.champs');
 
 // pour scrolltriger et gsap effet sur section parcours
 const allRonds = document.querySelectorAll('.rond');
@@ -61,6 +62,17 @@ let myChart = new Chart(tableau, {
     
 });
 
+//animation civil
+window.addEventListener('load', () => {
+
+const etatcivil = gsap.timeline({paused: true});
+
+etatcivil.staggerFrom(champs, 1, {opacity:0, x:-200, ease: "power2.out"}, 0.5);
+
+etatcivil.play()
+
+});
+
 
 // animation des logo
     const outil = gsap.timeline();
@@ -72,6 +84,7 @@ let myChart = new Chart(tableau, {
     .setTween(outil)
     // .addIndicators()
     .addTo(controller)
+
     
 // effet gsap et scrolltriger sur parcours
 
@@ -81,7 +94,7 @@ allBoxes.forEach(box => {
         if(allRonds[i].getAttribute('data-anim') === box.getAttribute('data-anim')){
             let tween = gsap.from(box, {y: -50, opacity: 0, duration: 0.5})
 
-            let scene = new ScrollMagic.Scene({
+            let scene2 = new ScrollMagic.Scene({
                 triggerElement: allRonds[i],
                 reverse: false
             })
