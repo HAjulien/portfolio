@@ -38,6 +38,20 @@ h1{
     margin: 0.5rem 1.5rem;
 }
 
+.presentation h1{
+    transition: all .3s ease-in-out;
+}
+.presentation h1:hover{
+    background-color: #040D21;
+    color: #f8f8f8;
+    transition: all .3s ease-in-out;
+}
+
+.presentation p{
+    margin: 2rem;
+    text-indent: 10px;
+    line-height: 24px;
+}
 .maPhoto{
     height: 120px;
     width: 120px;
@@ -53,7 +67,7 @@ h1{
     flex-direction: column;
 }
 
-/* 1er partie tableau */
+/* 1er partie tableau état civil*/
 .info{
     display: flex;
     flex-direction: column;
@@ -106,16 +120,18 @@ h2{
 .champs p {
     width: 70%;
     background-color: #2cd8d566;
-    border:1px solid #333;
     border-radius: 30px;
+    transition: all .3s linear;
 }
 
-a{
-    color: #000;
-    text-decoration: none;
+.champs p:hover{
+    background-color: #112A46;
+    color: #f8f8f8;
+    transition: all .3s linear;
 }
 
-/* 2eme partie du tableau */
+
+/* 2eme partie du tableau compétences*/
 
 .competences{
     display: flex;
@@ -306,12 +322,13 @@ h3{
 
 }
 
+/* section contact  */
 .fin{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    min-height: 500px;
+    min-height: 550px;
     margin-top: 5vh;
     padding: 1rem;
     background-color: #f8f8f8;

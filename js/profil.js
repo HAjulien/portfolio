@@ -17,6 +17,7 @@ const github = document.querySelector('.github');
 const contact = document.querySelector('.contact');
 const appel = document.querySelector('.appel');
 
+
 // tableau chart dans competences
 const tableau = document.getElementById('tableau').getContext('2d');
 
@@ -71,15 +72,19 @@ let myChart = new Chart(tableau, {
 });
 
 //animation civil
-window.addEventListener('load', () => {
 
-const etatcivil = gsap.timeline({paused: true});
+const etatcivil = gsap.timeline();
 
 etatcivil.staggerFrom(champs, 1, {opacity:0, x:-200, ease: "power2.out"}, 0.5);
 
-etatcivil.play()
-
-});
+new ScrollMagic.Scene({
+    triggerElement: champs,
+    triggerHook: 0.4,
+    reverse: false
+})  
+.setTween(etatcivil)
+// .addIndicators()
+.addTo(controller)
 
 
 // animation des logo
@@ -113,7 +118,7 @@ allBoxes.forEach(box => {
     }
 })
 
-
+//animation point fort
 allFort.forEach(boxFort => {
     for (i = 0; i< allFort.length; i++){
 
@@ -131,6 +136,7 @@ allFort.forEach(boxFort => {
     }
 })
 
+//animation point faible
 allFaible.forEach(boxFaible => {
     for (i = 0; i< allFaible.length; i++){
 
@@ -149,6 +155,7 @@ allFaible.forEach(boxFaible => {
 })
 
 
+//animation section fin github (git), contact (cont), email et phone (lien)
 const git = gsap.timeline();
 git.from(github, 1, {opacity:0, y:-100, ease: "power2.out"}, 0.1);
     new ScrollMagic.Scene({
