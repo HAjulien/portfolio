@@ -79,11 +79,11 @@ etatcivil.staggerFrom(champs, 1, {opacity:0, x:-200, ease: "power2.out"}, 0.5);
 
 new ScrollMagic.Scene({
     triggerElement: champs,
-    triggerHook: 0.4,
+    triggerHook: 0.6,
     reverse: false
 })  
 .setTween(etatcivil)
-// .addIndicators()
+.addIndicators()
 .addTo(controller)
 
 
