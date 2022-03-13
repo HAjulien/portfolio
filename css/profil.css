@@ -56,8 +56,9 @@ section{
     border-radius:15px 0 0 15px;
 }
 
-h3{
+h2{
     margin: 3vh 0;
+    font-size: 2rem;
 }
 
 .etatCivil{
@@ -119,8 +120,8 @@ p a{
 }
 
 h4{
-    text-align: center;
     margin: 3vh 0;
+    text-align: center;
 }
 .logos{
     display: flex;
