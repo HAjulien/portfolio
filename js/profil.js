@@ -1,5 +1,8 @@
 const tableau = document.getElementById('tableau').getContext('2d');
 
+// pour effet competance
+const logo = document.querySelectorAll('.logo');
+
 // pour scrolltriger et gsap effet sur section parcours
 const allRonds = document.querySelectorAll('.rond');
 const allBoxes = document.querySelectorAll('.box');
@@ -58,6 +61,18 @@ let myChart = new Chart(tableau, {
     
 });
 
+
+// animation des logo
+    const outil = gsap.timeline();
+    outil.staggerFrom(logo, 1, {opacity:0, ease: "power2.out"}, 0.2);
+    let scene = new ScrollMagic.Scene({
+        triggerElement: logo,
+        reverse: false
+    })  
+    .setTween(outil)
+    // .addIndicators()
+    .addTo(controller)
+    
 // effet gsap et scrolltriger sur parcours
 
 allBoxes.forEach(box => {
