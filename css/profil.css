@@ -12,7 +12,7 @@ body {
     min-height: 100vh;
     background-image: linear-gradient(-225deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%);
     font-family: Arial, Helvetica, sans-serif;
-    margin: 5px;
+    margin: 10px;
 }
 
 .presentation{
@@ -41,7 +41,7 @@ body {
     background-repeat: no-repeat;
 }
 
-section{
+.general{
     display: flex;
     flex-direction: column;
 }
@@ -59,6 +59,7 @@ section{
 h2{
     margin: 3vh 0;
     font-size: 2rem;
+    text-align: center;
 }
 
 .etatCivil{
@@ -138,13 +139,115 @@ h4{
 
 }
 
+.parcours{
+    margin: 5vh auto;
+    width: 70vw;
+    background-color: #fff;
+}
+.box-timeline{
+    position: relative;
+    width: 100%;
+    padding: 10%;
+    margin: 0 1rem;
+}
+.ligne{
+    height: 1200px;
+    width: 8px;
+    margin: 0 auto;
+    background-color: rgba(000, 99, 132);
+}
+.rond{
+    /* rond */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: rgba(226, 238, 246);
+    border: 1px solid #000;
+    left: 50%;
+    color: #333;
+    transform: translateX(-50%);
+    font-size: 24px;
+}
+/* (1000-160 + 80) / 3 = +306  prendre le padding en compte */
+.r1{top:80px;}
+.r2{top:386px;}
+.r3{top:692px;}
+.r4{top:1000px;}
+
+.box{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    min-height: 200px;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 1em;
+    border-radius: 3px;
+    color: #333;
+    box-shadow: 0 10px 15px rgb(0, 0, 0, .5);
+}
 
 
+.b1{
+    top: 80px;
+    left:  calc(50% - 220px);
+}
+.b2{
+    top: 386px;
+    left:  calc(50% + 220px);
+}
+.b3{
+    top: 692px;
+    left:  calc(50% - 220px);
+}
+.b4{
+    top: 1000px;
+    left:  calc(50% + 220px);
+}
+
+.box p{
+    line-height: 20px;
+    font-size: 16px;
+    margin: 15px;
+}
+
+.box span{
+    text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+
+
+    .parcours{
+        width: 94vw;
+    }
+
+    .ligne{
+        position: relative;
+        left: 100px;
+    }
+    
+    .rond{
+        left: calc(50% + 100px);
+    }
+    .box{
+        width: 220px;
+        height: 150px;
+        left: calc(50% - 70px);
+    }
+}
 
 
 @media screen and (min-width:880px) {
 
-    section{
+    .general{
         display: flex;
         flex-direction: row;
         justify-content: center;
