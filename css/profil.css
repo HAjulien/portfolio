@@ -142,7 +142,8 @@ h4{
 .parcours{
     margin: 5vh auto;
     width: 70vw;
-    background-color: #fff;
+    background-color: #f8f8f8;
+    border-radius: 15px;
 }
 .box-timeline{
     position: relative;
