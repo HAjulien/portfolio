@@ -200,19 +200,19 @@ h4{
 
 .b1{
     top: 80px;
-    left:  calc(50% - 220px);
+    left:  calc(50% - 190px);
 }
 .b2{
     top: 386px;
-    left:  calc(50% + 220px);
+    left:  calc(50% + 190px);
 }
 .b3{
     top: 692px;
-    left:  calc(50% - 220px);
+    left:  calc(50% - 190px);
 }
 .b4{
     top: 1000px;
-    left:  calc(50% + 220px);
+    left:  calc(50% + 190px);
 }
 
 .box p{
