@@ -12,8 +12,15 @@ body {
     min-height: 100vh;
     background-image: linear-gradient(-225deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%);
     font-family: Arial, Helvetica, sans-serif;
-    margin: 10px;
+    margin: 5px;
 }
+
+h1{
+    padding: .5rem;
+    border: 3px solid #112A46;
+    border-radius: 10px;
+}
+
 
 .presentation{
     display: flex;
@@ -58,8 +65,13 @@ body {
 
 h2{
     margin: 3vh 0;
+    padding: .5rem;
     font-size: 2rem;
     text-align: center;
+    text-decoration: underline #112A46;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 6px;
+
 }
 
 .etatCivil{
@@ -76,7 +88,7 @@ h2{
     justify-content: space-between;
     align-items: center;
     width: 96%;
-    height: 5vh;
+    height: 50px;
     margin: .5em 0;
 }
 
@@ -98,7 +110,7 @@ h2{
     border-radius: 30px;
 }
 
-p a{
+a{
     color: #000;
     text-decoration: none;
 }
@@ -117,10 +129,10 @@ p a{
 }
 
 #tableau{
-   height: 400px;
+   height: 320px;
 }
 
-h4{
+h3{
     margin: 3vh 0;
     text-align: center;
 }
@@ -145,8 +157,12 @@ h4{
     margin: 5vh auto;
     width: 70vw;
     background-color: #f8f8f8;
+    border: 1px solid #333;
     border-radius: 15px;
 }
+
+
+
 .box-timeline{
     position: relative;
     width: 100%;
@@ -158,6 +174,7 @@ h4{
     width: 8px;
     margin: 0 auto;
     background-color: rgba(000, 99, 132);
+    border-radius: 5px;
 }
 .rond{
     /* rond */
@@ -225,11 +242,162 @@ h4{
     text-align: center;
 }
 
+/* Section point fort/faibles */
+.fort, .faible{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    min-height: 600px;
+}
+
+.fort{
+    margin-bottom: 2rem;
+    background-color: #f8f8f8;
+    border-radius: 15px 0 0 15px;
+    
+}
+
+.faible{
+    background-color: #f8f8f883;
+    border-radius: 0 15px 15px 0;
+}
+
+.fort h3, .faible h3{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    min-height: 50px;
+    padding: .5rem;
+    margin: 2rem 0;
+    border-radius: 10px;
+
+}
+
+.fort h3{
+    border: 3px solid #00e3aec4 ;
+}
+.faible h3{
+    border: 3px solid #ff0846 ;
+}
+
+.fort div, .faible div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 350px;
+    margin: 2rem;
+    padding: 1em;
+    min-height: 80px;
+    border-radius: 20px;
+}
+
+.fort div{
+    color: #000;
+    background-image: linear-gradient(to top, #9ae15da8 0%, #00e3aec4 100%);    
+    border: 2px solid #112A46;
+}
+
+.faible div{
+    color: #fff;
+    background-image: linear-gradient(to top, #ff0846 0%, #ffb199 100%);
+    border: 3px solid #ff0000;
+
+}
+
+.fin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 500px;
+    margin-top: 5vh;
+    padding: 1rem;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+}
+
+.fin a{
+    text-decoration: none;
+}
+
+.github, .contact{
+    max-width: 350px;
+    margin: 2rem;
+    padding: 1em;
+    min-height: 80px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.github{
+    background-color: #040D21;
+    color: #f8f8f8;
+
+}
+
+.contact{
+    border: 2px solid #112A46;
+    background-color: #2CD8D5;
+}
+
+
+.appel{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.icone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2CD8D5;
+    margin: 0 10px;
+    width: 100%;
+    height: 40px;
+    border: 2px solid #040D21;
+    border-radius: 20px;
+    transition: all .3s ease-in-out;
+}
+
+.icone span{
+    margin-left: 5px;
+    font-size: 12px;
+    color: #000;
+    transition: all .3s ease-in-out;
+}
+ 
+.icone img{
+    height: 15px;
+    width: 15px;
+}
+.icone:hover{
+    background-color: #C5C1FF;
+    transition: all .3s ease-in-out;
+}
+
+.icone span:hover{
+    font-size: 16px;
+    transition: all .3s ease-in-out;
+
+}
+
+
+
+@media screen and (min-width: 500px) {
+    #tableau{
+        height: 450px;
+    }
+    
+}
+
 @media screen and (max-width: 1000px) {
 
 
     .parcours{
-        width: 94vw;
+        width: 90vw;
     }
 
     .ligne{
@@ -248,19 +416,10 @@ h4{
 }
 
 
-/* point fort et faibles */
-
-.fort{
-    height: 100vh;
-    background-color: #f8f8f8;
-}
-
-
-
 
 @media screen and (min-width:880px) {
 
-    .general{
+    .general, .atouts{
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -278,5 +437,14 @@ h4{
     }
     .competences{
         width: 60%;
+    }
+
+    .faible, .fort{
+        margin: 0;
+    }
+
+    .fin{
+        width: 45%;
+        margin: 5vh auto;
     }
 }
