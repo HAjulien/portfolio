@@ -1,6 +1,6 @@
 const tableau = document.getElementById('tableau').getContext('2d');
 
-// pour effet competance
+// pour effet competence
 const logo = document.querySelectorAll('.logo');
 const champs = document.querySelectorAll('.champs');
 

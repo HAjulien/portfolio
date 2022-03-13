@@ -139,6 +139,8 @@ h4{
 
 }
 
+/* frise parcours */
+
 .parcours{
     margin: 5vh auto;
     width: 70vw;
@@ -244,6 +246,15 @@ h4{
         left: calc(50% - 50px);
     }
 }
+
+
+/* point fort et faibles */
+
+.fort{
+    height: 100vh;
+}
+
+
 
 
 @media screen and (min-width:880px) {
