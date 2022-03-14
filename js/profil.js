@@ -157,7 +157,7 @@ allFaible.forEach(boxFaible => {
 
 //animation section fin github (git), contact (cont), email et phone (lien)
 const git = gsap.timeline();
-git.from(github, 1, {opacity:0, y:-100, ease: "power2.out"}, 0.1);
+git.from(github, 1, {opacity:0, y:-100, ease: "power2.out"} );
     new ScrollMagic.Scene({
     triggerElement: github,
     triggerHook: 0.8,
@@ -168,7 +168,7 @@ git.from(github, 1, {opacity:0, y:-100, ease: "power2.out"}, 0.1);
 .addTo(controller)
 
 const cont = gsap.timeline();
-cont.from(contact, 1, {opacity:0, y:100, ease: "power2.out"}, 0.1);
+cont.from(contact, 1, {opacity:0, y:100, ease: "power2.out"}    );
     new ScrollMagic.Scene({
     triggerElement: github,
     triggerHook: 0.8,
