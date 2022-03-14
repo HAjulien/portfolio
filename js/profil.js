@@ -83,7 +83,7 @@ new ScrollMagic.Scene({
     reverse: false
 })  
 .setTween(etatcivil)
-.addIndicators()
+// .addIndicators()
 .addTo(controller)
 
 
