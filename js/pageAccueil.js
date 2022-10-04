@@ -27,7 +27,7 @@ window.addEventListener('load', () => {
 
     new Typewriter(competences, {
         deleteSpeed:8,
-        delay: 40,
+        delay: 20,
     })
     .pauseFor(2000)
     .typeString("Actuellement à la recherche d'une alternance pour un Bac+3 , J'ai appris comme language ")
