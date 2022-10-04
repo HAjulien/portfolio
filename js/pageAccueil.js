@@ -26,21 +26,21 @@ window.addEventListener('load', () => {
 window.addEventListener('load', () => {
 
     new Typewriter(competences, {
-        deleteSpeed:15,
+        deleteSpeed:8,
         delay: 40,
     })
-    .pauseFor(2500)
+    .pauseFor(2000)
     .typeString("Actuellement à la recherche d'une alternance pour un Bac+3 , J'ai appris comme language ")
-    .pauseFor(500)
+    .pauseFor(200)
     .typeString('<strong style="color: #F16529">le HTML </strong> ')
-    .pauseFor(300)
+    .pauseFor(100)
     .typeString('et le <strong style="color: #2965F1">CSS</strong> !')
     .pauseFor(1000)
     .deleteChars(21)
     .typeString(' le <strong style="color: #ff6910">JavaScript</strong> ')
-    .pauseFor(300)
+    .pauseFor(100)
     .typeString('ainsi que le <strong style="color: #9300ff ">PHP</strong> !')
-    .pauseFor(500)
+    .pauseFor(200)
     .typeString(' J\'ai également travaillé sur les framework <strong style="color: #3FB27F ">VueJS</strong> et <strong style="color: #2c40d8 ">Symfony</strong> !')
 
     .start()
