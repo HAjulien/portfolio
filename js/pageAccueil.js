@@ -30,7 +30,7 @@ window.addEventListener('load', () => {
         delay: 40,
     })
     .pauseFor(2500)
-    .typeString("Actuellement en formation BAC +2 en développement web et web mobile à l'AFPA de Créteil, J'ai appris comme language ")
+    .typeString("Actuellement à la recherche d'une alternance pour un Bac+3 , J'ai appris comme language ")
     .pauseFor(500)
     .typeString('<strong style="color: #F16529">le HTML </strong> ')
     .pauseFor(300)
